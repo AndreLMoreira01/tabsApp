@@ -1,17 +1,84 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Temperatura
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="title">
+      Lençóis Paulista
+  <ion-icon name="cloud-outline"></ion-icon> 30°
+</ion-card-title>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    </ion-card-header>
+
+    <ion-grid>
+      <ion-row class="time">
+        <ion-col>
+          <div class="linha">Dia</div>
+        </ion-col>
+        <ion-col>
+          <div class="linha">Min /Max</div>
+        </ion-col>
+        <ion-col>
+          <div class="linha">Previsão<ion-icon name="cloud-outline"></ion-icon></div>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="time">
+        <ion-col>
+          <div>04/08/2022</div>
+        </ion-col>
+        <ion-col>
+          <div>32° /19°</div>
+        </ion-col>
+        <ion-col>
+          <div>Sol <ion-icon name="cloud-outline"></ion-icon></div>
+        </ion-col>
+      </ion-row>
+
+<ion-row class="time">
+        <ion-col>
+          <div>05/08/2022</div>
+        </ion-col>
+        <ion-col>
+          <div>20° /12°</div>
+        </ion-col>
+        <ion-col>
+          <div>Chuva <ion-icon name="rainy-outline"></ion-icon></div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="time">
+        <ion-col>
+          <div>06/08/2022</div>
+        </ion-col>
+        <ion-col>
+          <div>24° /19°</div>
+        </ion-col>
+        <ion-col>
+          <div>Frente Fria <ion-icon name="cloud-outline"></ion-icon></div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="time">
+        <ion-col>
+          <div>07/08/2022</div>
+        </ion-col>
+        <ion-col>
+          <div>35° /25°</div>
+        </ion-col>
+        <ion-col>
+          <div>Ensolarado <ion-icon name="cloud-outline"></ion-icon></div>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    </ion-card>
 </ion-content>
