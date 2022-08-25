@@ -8,12 +8,15 @@ import { ApiService } from '../services/api.service';
 })
 export class Tab1Page {
 
+  previsao = {};
+
   //importante dados poderia ter qualquer nome
   //muito importante
   constructor(private api: ApiService) {
     this.api.buscarPrevisao().subscribe(dados => {
       // eslint-disable-next-line @typescript-eslint/dot-notation
-      console.log(dados['coord']['lat']);
+      console.log(dados);
+      this.previsao = dados;
     });
   }
 
