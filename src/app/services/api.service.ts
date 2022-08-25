@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Injectable } from '@angular/core';
 //foi colocada aqui
 //importante
@@ -9,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
 export class ApiService {
 
 //para integrar a api
-  private url = 'https://api.hgbrasil.com/weather?woeid=438947';
+  private url = 'https://api.openweathermap.org/data/2.5/weather?lat=-22.59861&lon=-48.80028&lang=pt_br&appid=5c0208d063ec187d9c2a78a6920ac4f2&units=metric';
 
   constructor(private http: HttpClient) { }
 
